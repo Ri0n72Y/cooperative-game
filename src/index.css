@@ -1,0 +1,19 @@
+#root {
+  background: aliceblue;
+  min-height: 100vh;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.base-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 12px 0 0;
+}
