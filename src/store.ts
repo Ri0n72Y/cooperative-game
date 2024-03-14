@@ -1,4 +1,5 @@
 import { createContext, useContext } from "react";
+import { create } from "zustand";
 
 export const initialValue = {
   farm: 5,
@@ -15,3 +16,17 @@ const context = createContext<{
 }>({ state: initialValue, setState: () => {} });
 export const DataProvider = context.Provider;
 export const useData = () => useContext(context);
+
+interface i18nProps {
+  zh: Record<string, string>;
+  en: Record<string, string>;
+}
+export const useI18n = create<i18nProps>()((set) => {
+  fetch("/lang.json")
+    .then((res) => res.json())
+    .then((res) => set(res));
+  return {
+    zh: {},
+    en: {},
+  };
+});
