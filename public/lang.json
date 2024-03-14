@@ -1,0 +1,30 @@
+{
+  "zh": {
+    "farm": "农场",
+    "light-industry": "轻工业",
+    "heavy-industry": "工业",
+    "heavy-industry-tesla": "特斯拉",
+    "service": "居民区",
+    "service-plus": "高级住宅区",
+    "cbd": "中心区",
+    "rent": "租金",
+    "price": "地价",
+    "media": "媒体",
+    "law": "律所",
+    "transport": "交通",
+    "trade": "贸易",
+    "bank": "银行",
+    "management": "管理"
+  },
+  "en": {
+    "farm": "Farm",
+    "light-industry": "Light Industry",
+    "heavy-industry": "Heavy Industry",
+    "heavy-industry-tesla": "Heavy Industry Tesla",
+    "service": "Service",
+    "service-plus": "Service Plus",
+    "cbd": "CBD",
+    "rent": "Rent",
+    "price": "Price"
+  }
+}

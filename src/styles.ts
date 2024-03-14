@@ -39,3 +39,7 @@ export const StyledDataGrid = styled(DataGrid)`
     word-wrap: break-word !important;
   }
 `;
+
+export const Flex = styled.div`
+  display: flex;
+`;

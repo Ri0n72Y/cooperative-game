@@ -33,7 +33,7 @@ export function Card({
       <Half style={{ borderLeft: "1px dashed hotpink", gap: 8 }}>
         {income.split(" | ").map((x, i) => {
           return (
-            <Nodeline>
+            <Nodeline key={i}>
               {i === 0 && <IconBox style={{ width: 16, height: 16 }} />}
               {i === 1 && <DbBox />}
               {i === 2 && <TriBox />}
@@ -93,6 +93,7 @@ const Side = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 50%;
 `;
 
@@ -103,7 +104,7 @@ const CardDetail = styled.div`
   background: aquamarine;
   font-size: 14px;
   display: flex;
-  margin: 0 2px;
+  margin: 1px;
 `;
 
 const Nodeline = styled.div`
